@@ -49,7 +49,7 @@ const generateAccessToken = (req, resp) => {
     const currentTime = Math.floor(Date.now() /1000);
     const privilegeExpireTime = currentTime + expireTime;
     //build the token
-    const token =RtcTokenBuilder.buildTokenWithUid(APP_ID,APP_CERTIFICATE,'test', uid,role,privilegeExpireTime);
+    const token =RtcTokenBuilder.buildTokenWithUid(APP_ID,APP_CERTIFICATE,channelName, uid,role,privilegeExpireTime);
     //return the token 
     return resp.json({ 'token':token}); 
    
