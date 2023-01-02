@@ -40,7 +40,7 @@ const generateAccessToken = (req, resp) => {
     let expireTime = req.query.expireTime;
     if (!expireTime || expireTime == '')
     {
-        expireTime =3600;
+        expireTime =86400;
     }
     else {
         expireTime = parseInt(expireTime,10);
