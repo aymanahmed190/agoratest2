@@ -59,6 +59,7 @@ const generateAccessToken = (req, resp) => {
 
 
 // app.get('/access_token', nocashe, generateAccessToken);
+app.get('/access_token', nocashe, 'copyrights reserved to aymanahmedfathy.');
 app.listen(PORT, () => {
    // console.log('Listening on port: ${PORT}');
    console.log('Listening on port:'+PORT);
