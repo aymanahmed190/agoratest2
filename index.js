@@ -51,7 +51,8 @@ const generateAccessToken = (req, resp) => {
     //build the token
     const token =RtcTokenBuilder.buildTokenWithUid(APP_ID,APP_CERTIFICATE,channelName, uid,role,privilegeExpireTime);
     //return the token 
-    return resp.json({ 'token':token}); 
+    // return resp.json({ 'token':token}); 
+    return resp.json({ 'copyrights preserved to aymanAhmedFathiElsaidEladl.'}); 
    
    
    
@@ -59,6 +60,7 @@ const generateAccessToken = (req, resp) => {
 
 
 // app.get('/access_token', nocashe, generateAccessToken);
+app.get('/access_token', nocashe, generateAccessToken);
 
 app.listen(PORT, () => {
    // console.log('Listening on port: ${PORT}');
