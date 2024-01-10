@@ -52,7 +52,7 @@ const generateAccessToken = (req, resp) => {
     const token =RtcTokenBuilder.buildTokenWithUid(APP_ID,APP_CERTIFICATE,channelName, uid,role,privilegeExpireTime);
     //return the token 
     // return resp.json({ 'token':token}); 
-    return resp.json({ 'copyrights preserved to aymanAhmedFathiElsaidEladl.'}); 
+    return resp.json({ 'token':'copyrights preserved to aymanAhmedFathiElsaidEladl.'}); 
    
    
    
